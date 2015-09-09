@@ -37,6 +37,8 @@ public class EventosJCheckBox extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Eventos con JCheckBox");
+        setIconImage(null);
+        setLocation(new java.awt.Point(200, 200));
 
         jCheckBox1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jCheckBox1.setText("jCheckBox1");
