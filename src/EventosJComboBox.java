@@ -48,6 +48,7 @@ public class EventosJComboBox extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Eventos con JComboBox");
 
         jComboBox1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rojo", "Verde", "Azul", "Negro", "Blanco" }));
