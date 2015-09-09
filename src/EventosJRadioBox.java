@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+import javax.swing.JRadioButton;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author Javier
  */
-public class EventosJCheckBox extends javax.swing.JDialog {
+public class EventosJRadioBox extends javax.swing.JDialog {
 
     /**
-     * Creates new form EventosJCheckBox
+     * Creates new form EventosJRadioBox
      */
-    public EventosJCheckBox(java.awt.Frame parent, boolean modal) {
+    public EventosJRadioBox(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -30,38 +30,37 @@ public class EventosJCheckBox extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Eventos con JCheckBox");
+        setTitle("Eventos con JRadioButton");
 
-        jCheckBox1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jCheckBox1.setText("jCheckBox1");
-        jCheckBox1.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                eventoItemStateChanged(evt);
-            }
-        });
-        jCheckBox1.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jCheckBox1StateChanged(evt);
-            }
-        });
-
-        jCheckBox2.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jCheckBox2.setText("jCheckBox2");
-        jCheckBox2.addItemListener(new java.awt.event.ItemListener() {
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jRadioButton1.setText("jRadioButton1");
+        jRadioButton1.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 eventoItemStateChanged(evt);
             }
         });
 
-        jCheckBox3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jCheckBox3.setText("jCheckBox3");
-        jCheckBox3.addItemListener(new java.awt.event.ItemListener() {
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jRadioButton2.setText("jRadioButton2");
+        jRadioButton2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                eventoItemStateChanged(evt);
+            }
+        });
+
+        buttonGroup1.add(jRadioButton3);
+        jRadioButton3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jRadioButton3.setText("jRadioButton3");
+        jRadioButton3.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 eventoItemStateChanged(evt);
             }
@@ -74,65 +73,52 @@ public class EventosJCheckBox extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(122, 122, 122)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(68, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTextField1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jCheckBox1)
-                        .addGap(68, 68, 68)
-                        .addComponent(jCheckBox2)
-                        .addGap(128, 128, 128)
-                        .addComponent(jCheckBox3)))
-                .addContainerGap(106, Short.MAX_VALUE))
+                        .addComponent(jRadioButton1)
+                        .addGap(63, 63, 63)
+                        .addComponent(jRadioButton2)
+                        .addGap(118, 118, 118)
+                        .addComponent(jRadioButton3)))
+                .addGap(58, 58, 58))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(144, 144, 144)
+                .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox3))
-                .addGap(40, 40, 40)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2)
+                    .addComponent(jRadioButton3))
+                .addGap(46, 46, 46)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox1StateChanged
-        
-    }//GEN-LAST:event_jCheckBox1StateChanged
-
     private void eventoItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_eventoItemStateChanged
-        ArrayList arrayList = new ArrayList();
         
-        if( jCheckBox1.isSelected() )
+        /*
+        if( jRadioButton1.isSelected() )
         {
-            arrayList.add( jCheckBox1.getText() );
-        } // End if
-        
-        if( jCheckBox2.isSelected() )
+            jTextField1.setText( jRadioButton1.getText() );
+        }else if( jRadioButton2.isSelected() )
         {
-            arrayList.add( jCheckBox2.getText() );
-        }
-        
-        if( jCheckBox3.isSelected() )
-        {
-            arrayList.add( jCheckBox3.getText() );
-        }
-        
-        if( arrayList.isEmpty() )
-        {
-            jTextField1.setText( "" );
+            jTextField1.setText( jRadioButton2.getText() );
         }else{
-            jTextField1.setText( arrayList.toString() );
+            jTextField1.setText( jRadioButton3.getText() );
         }
-            
+        */
+        
+        JRadioButton jRadioButton = (JRadioButton) evt.getSource();
+        jTextField1.setText( jRadioButton.getText() );
     }//GEN-LAST:event_eventoItemStateChanged
-    
+
     /**
      * @param args the command line arguments
      */
@@ -150,20 +136,20 @@ public class EventosJCheckBox extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EventosJCheckBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EventosJRadioBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EventosJCheckBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EventosJRadioBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EventosJCheckBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EventosJRadioBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EventosJCheckBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EventosJRadioBox.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                EventosJCheckBox dialog = new EventosJCheckBox(new javax.swing.JFrame(), true);
+                EventosJRadioBox dialog = new EventosJRadioBox(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -176,9 +162,10 @@ public class EventosJCheckBox extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
